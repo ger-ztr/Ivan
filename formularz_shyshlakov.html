@@ -1,12 +1,127 @@
-<!DOCTYPE html> 
-<html lang="pl-PL">  
-     <head> 
-      <meta charset="utf-8"> 
-             <title>tabela Shyshlakov</title> 
-     </head> 
-    <body> 
- tutaj będzie formularz <br>
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <title>Ankieta muzyczna ROCK & METAL</title>
+</head>
+
+<body bgcolor="#800080" text="white">
+
+<center>
+<h1>ANKIETA MUZYCZNA — ROCK & METAL</h1>
+
+<form enctype="text/plain"
+      action="mailto:ivanshishlakov511@gmail.com"
+      method="POST">
+
+<table>
+
+<!-- DANE -->
+<tr><td colspan="2"><h2>Dane uczestnika:</h2></td></tr>
+
+<tr>
+<td><b>Imię:</b> <input type="text" name="imie"></td>
+<td><b>Nazwisko:</b> <input type="text" name="nazwisko"></td>
+</tr>
+
+<tr>
+<td><b>Wiek:</b> <input type="number" name="wiek"></td>
+<td><b>E-mail:</b> <input type="text" name="email"></td>
+</tr>
+
+<tr>
+<td colspan="2"><b>Miasto:</b> <input type="text" name="miasto"></td>
+</tr>
+
+<tr>
+<td colspan="2"><b>Pseudonim artystyczny:</b> <input type="text" name="login"></td>
+</tr>
+
+<!-- GATUNKI -->
+<tr><td colspan="2"><h2>1. Ulubiony gatunek rocka/metalu</h2></td></tr>
+
+<tr>
+<td>
+    <input type="checkbox" name="gatunek" value="rock_klasyczny"> Rock klasyczny<br>
+    <input type="checkbox" name="gatunek" value="hardrock"> Hard Rock<br>
+    <input type="checkbox" name="gatunek" value="heavy"> Heavy Metal<br>
+    <input type="checkbox" name="gatunek" value="thrash"> Thrash Metal<br>
+    <input type="checkbox" name="gatunek" value="death"> Death Metal<br>
+    <input type="checkbox" name="gatunek" value="black"> Black Metal<br>
+    <input type="checkbox" name="gatunek" value="metalcore"> Metalcore<br>
+</td>
+
+<td>
+    <b>2. Ulubione zespoły:</b><br>
+    <textarea name="zespoly" cols="40" rows="6"></textarea>
+</td>
+</tr>
+
+<!-- INSTRUMENT -->
+<tr><td colspan="2"><h2>3. Czy grasz na jakimś instrumencie?</h2></td></tr>
+
+<tr><td colspan="2">
+    <input type="checkbox" name="instrument" value="gitara"> Gitara<br>
+    <input type="checkbox" name="instrument" value="bas"> Bas<br>
+    <input type="checkbox" name="instrument" value="perkusja"> Perkusja<br>
+    <input type="checkbox" name="instrument" value="wokal"> Wokal<br>
+    <input type="checkbox" name="instrument" value="inny"> Inny:
+    <input type="text" name="instrument_inny">
+</td></tr>
+
+<!-- CZĘSTOŚĆ -->
+<tr><td colspan="2"><h2>4. Jak często słuchasz muzyki?</h2></td></tr>
+
+<tr><td colspan="2">
+    <input type="radio" name="czestosc" value="codziennie"> Codziennie<br>
+    <input type="radio" name="czestosc" value="kilka_razy"> Kilka razy w tygodniu<br>
+    <input type="radio" name="czestosc" value="rzadko"> Rzadko<br>
+</td></tr>
+
+<!-- KONCERT -->
+<tr><td colspan="2"><h2>5. Czy byłeś kiedyś na koncercie rockowym/metallowym?</h2></td></tr>
+
+<tr><td colspan="2">
+    <input type="radio" name="koncert" value="tak"> TAK<br>
+    <input type="radio" name="koncert" value="nie"> NIE
+</td></tr>
+
+<!-- OCENA SELECT -->
+<tr><td colspan="2"><h2>6. Twoja ocena rocka/metalu (1–5):</h2></td></tr>
+
+<tr><td colspan="2">
+    <select name="ocena">
+        <option value="1">1 </option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+</td></tr>
+
+<!-- KOMENTARZE -->
+<tr><td colspan="2"><h2>7. Uwagi / Komentarze:</h2></td></tr>
+
+<tr><td colspan="2">
+    <textarea name="komentarze" cols="50" rows="6"></textarea>
+</td></tr>
+
+<!-- PRZYCISKI -->
+<tr><td colspan="2" align="center"><br>
+    <input type="submit" value="SUBMIT">
+    &nbsp;&nbsp;
+    <input type="reset" value="RESET">
+</td></tr>
+
+</table>
+</form>
+
+<br>
+<i>Ivan Shyshlakov 2F</i>
+</center>
+
 <A HREF="index.html"> Wróć </A> 
     </body> 
 
   </html>
+
